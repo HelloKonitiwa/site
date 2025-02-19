@@ -55,17 +55,18 @@ h2 {
 /* 記事詳細 */
 #article-detail {
   margin-top: 40px;
-  padding-bottom: 60px; /* 下部の余白を追加 */
-  max-height: calc(100vh - 120px); /* 見える高さを制限 */
-  overflow-y: auto; /* 縦スクロールを有効に */
+  padding-bottom: 60px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
 }
 
 .vertical-text {
   writing-mode: vertical-rl;
   text-align: justify;
   font-size: 24px;
-  line-height: 1.8;
-  word-break: break-all;
+  line-height: 2.0; /* 行間を広げて、読みやすくする */
+  word-break: break-word; /* 単語の途中で折り返し */
+  white-space: pre-wrap; /* 改行をそのまま表示 */
 }
 
 /* フッター */
